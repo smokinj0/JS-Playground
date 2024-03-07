@@ -1,5 +1,5 @@
 //NOTE - 
-/*this is plain text */
+/*const is constant and unchangeable, let is let it be value of and can be changed */
 const num1 = 10
 console.log(num1)
 
