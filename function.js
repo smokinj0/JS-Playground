@@ -26,3 +26,36 @@ function checkArraySum (arr) {
 }
 
 console.log(checkArraySum([0, 1, 5, 3]))
+
+//SECTION - write a function that an array of items and returns only integers.
+//['Josh', 3, 'me', 5, 9] -> [3,5,9]
+
+function onlyInteger(arr) {
+let integer = []  //NOTE - running loop
+for (let i = 0; i <arr.length; i++) {
+    if(Number.isInteger(arr[i])) {
+    integer.push(arr[i])
+}
+}
+return integer
+
+}
+
+console.log(onlyInteger(['Josh', 3, "me", 5, 9]))
+
+//SECTION - write a function that takes an array with numbers and return an array with the elements multiplied by 2
+//arrayByTwo([2,5,4]) -> [4,10,8]
+
+function arrayByTwo(arr) {
+    for (i = 0; i < arr.length, i++) {
+        arr[i] *=2
+    } 
+    return arr
+}
+console.log(arrayByTwo([2,5,4]))
+
+//One line
+const oneLineArray = (arr) => arr.map(el => *2)
+
+console.log(onelineArray([2,5,4]))
+

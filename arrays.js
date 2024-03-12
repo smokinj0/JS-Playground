@@ -54,7 +54,7 @@ if(num % 2 == 0) {
 }
 }
 
-console.log(is even numbers)
+console.log('is even numbers')
 //NOTE - every() method executes a function for each array element. The every() method returns true if the function returns true for all elements.
 console.log(numbers.every(isEven))
 
