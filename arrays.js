@@ -38,6 +38,33 @@ let a = [-4, -5, -3]
 let b = 0
 let c = [12, 13, 14]
 
-//NOTE - concat() method which is used to join two or more araays.
+//NOTE - concat() method which is used to join two or more arrays.
 let result = a.concat(b, c)
-console.log(result)
+//console.log(result)
+
+let numbers = [2,4,7,8,9]
+
+let isEven = (num) => {
+if(num % 2 == 0) {
+    console.log{num + 'is even number'}
+    return
+} else {
+    console.log (num + 'is odd number')
+    return false 
+}
+}
+
+console.log(is even numbers)
+//NOTE - every() method executes a function for each array element. The every() method returns true if the function returns true for all elements.
+console.log(numbers.every(isEven))
+
+console.log(numbers.some(isEven)
+
+
+for (let j = 0; j <numbers.length; j++) {
+     let temp = numbers[i]
+if ( temp % 2 == 0 {
+ console.log (temp + ' is even number')
+ else {
+ console.log(temp + ' is an odd number')
+}
