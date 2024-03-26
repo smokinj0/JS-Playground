@@ -64,31 +64,73 @@
 
 //OR
 
-function rotateArray(arr) {
-    let lastValue = arr.pop()
-    arr.unshift(lastValue)
-    return arr
-}
-const result = rotateArray([20, 15, 26, 22, 30]);
- console.log(result);
-Output: [30, 20, 15, 26, 22]
+// function rotateArray(arr) {
+//     let lastValue = arr.pop()
+//     arr.unshift(lastValue)
+//     return arr
+// }
+// const result = rotateArray([20, 15, 26, 22, 30]);
+//  console.log(result);
+// Output: [30, 20, 15, 26, 22]
 
 
 //Create a function that takes a given date (3/26/2024) return the day of the week
 //as string start week on sunday
 
-function getDayOfWeek(day) {
-    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    const date = new Date(day);
-    const dayIndex = date.getDay();
+// function getDayOfWeek(day) {
+//     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+//     const date = new Date(day);
+//     const dayIndex = date.getDay();
     
-    return days[dayIndex];
+//     return days[dayIndex];
+// }
+
+// // Test the function with the given date "3/26/2024"
+// const inputDate = "3/26/2024";
+// const dayOfWeek = getDayOfWeek(inputDate);
+// console.log(dayOfWeek); // Output: Tuesday
+
+// //ES6
+
+// const getDayNameTwo = day => new Date(day).toLocaleDateString('en-us', {weekday: 'long'})
+// console.log(getDayNameTwo("2024-03-26"))
+
+
+//Create a function that can take a flat array and change it to a nest arrays to represent an icremental depth level.
+
+//Ex nestArray([1,2,6,3])-> [1, [2, [6, [3]]]]
+
+// function nestArray(arr) {
+//     if (arr.length === 1) {
+//         return arr[0];
+//     } else {
+//         return [arr[0], nestArray(arr.slice(1))];
+//     }
+// }
+
+// // Test the function
+// const result = nestArray([1, 2, 6, 3]);
+// console.log(result); // Output: [1, [2, [6, [3]]]]
+
+
+//Create a function that takes two dates and return the number of days between the first and second date.
+
+/* getNumbers(
+    new Date("March 26 2024"),
+    new Date("March 30 2024")
+
+) */ 
+
+//output -> 4days
+
+//ES6  (provide comments)
+const getDays = (date1, date2) => {
+    return new Date(date2 - date1).getDate() -1
+
 }
+// Test the function
+const startDate = new Date("March 26 2024");
+const endDate = new Date("March 30 2024");
 
-// Test the function with the given date "3/26/2024"
-const inputDate = "3/26/2024";
-const dayOfWeek = getDayOfWeek(inputDate);
-console.log(dayOfWeek); // Output: Tuesday
-
-const getDayNameTwo = day => new Date(day).toLocaleDateString('en-us', {weekday: 'long'})
-console.log(getDayNameTwo("2024-03-26"))
+const daysBetween = getDays(startDate, endDate);
+console.log(daysBetween); // Output: 4
