@@ -152,4 +152,53 @@ function stringified(arr) {
   function arrayToNumbers(arr) {
     return arr.map(Number)
   }
-  console.log(stringified([1, 3, 6.7]))
+  //console.log(stringified([1, 3, 6.7]))
+
+  //create a function that return (true) if all parameters are truthy and false otherwise
+  //Ex checkParam(true, true, true) -> true
+  //checkParam(5,1,3, 0) -> false
+  //falsy values are: false, 0 and ""
+
+  function checkParam(...params) {
+    return params.every(param => !!param);
+  }
+  
+  // Test the function
+  // console.log(checkParam(true, true, true)); // true
+  // console.log(checkParam(5, 1, 3, 0)); // false
+  // console.log(checkParam(false, true)); //false
+
+ //ES5
+//  function checkParamOne(param1, param2, param3, param4) {
+//   if(param1 && param2 && param3 && param4) {
+//     return true
+//   } else {
+//     return false
+//   }
+//  }
+
+ //console.log(checkParamOne(5, 1, 3, 0))
+
+//create a function to check if an array contains a particular number
+//Ex: checkArray([5,5,6], 5) -> true
+//Ex: checkArray ([1,3,5,7,10], 2) -> false
+
+// const checkArray = (arr, target) => arr.includes(target);
+
+// Test the function
+// console.log(checkArray([5, 5, 6], 5)); //true
+// console.log(checkArray([1, 3, 5, 7, 10], 2)); //false
+
+
+
+
+function checkArrayThree(arr, x) {
+  for(let i =0; i < arr.length; i++) {
+    if(arr[i] ==x) {
+      return true
+    } 
+  }
+  return false
+}
+
+console.log(checkArrayThree([5, 5, 6], 5))
