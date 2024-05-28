@@ -6,7 +6,7 @@
 }
 console.log(countDigits(3456)) */
 
-const digitCount = (n) => {
+/*const digitCount = (n) => {
     if (Number.isInteger(n)) {
         if(n > 0) {
             let digits = 1
@@ -27,7 +27,7 @@ const digitCount = (n) => {
         }
     }
 }
-console.log(digitCount(-198734))
+console.log(digitCount(-198734)) */
 
 //number of numbers in the given number
 //negative numbers
@@ -40,8 +40,34 @@ split and count the array length to return the number of numbers
 //2.turn number into string
 //3.return the length of numbers
 
-function intCount(n) {
+/*function intCount(n) {
     let positive = Math.abs(n)
     let numString = positive.toString
     return numString.length
+}*/
+
+/*1.create a function that takes an array of integers as an argument and returns the same array in ascending order using sort() method
+
+2.you hav eto sort the array creating ES5 own algorithm
+*/
+/*function swap(arr, firstIndex, secondIndex) {
+    var temp = arr[firstIndex];
+arr[firstIndex] = arr[secondIndex];
+arr[secondIndex] = temp;
 }
+function bubbleSortAlgo(araaytest) {
+    var len = araaytest.length,
+    i, j, stop;
+
+
+    for (i=0; i < len; i++){
+    for (j=0, stop=len-i; j < stop; j++) {
+        if (araaytest[j] > araaytest[j+1]){
+            swap(araaytest, j, j+1);
+        }
+    }
+    }return araaytest;
+}
+console.log(bubbleSortAlgo([3, 6, 2, 5, -75, 4, 1]))*/
+
+const numArray = 
