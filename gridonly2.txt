@@ -7,7 +7,7 @@ class TicTacToe {
         ];
         this.currentPlayer = 'X'; //This allows player (X) to make the first move.
         this.moves = 0;
-        //this.gameOver = false;
+        this.gameOver = false;
     }
 
     printBoard() {
@@ -23,5 +23,5 @@ class TicTacToe {
     }
 }
 
- const game = new TicTacToe(); // Create an instance of the TicTacToe class
+const game = new TicTacToe(); // Create an instance of the TicTacToe class
 game.printBoard(); // Call the printBoard method to display the game board
